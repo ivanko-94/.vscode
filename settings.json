@@ -1,0 +1,26 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": ["--rcfile=.pylint/.pylintrc"],
+    "python.linting.enabled": true,
+    "pylint.args": ["--rcfile=.pylint/.pylintrc"],
+
+
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+            "--line-length", "120"
+    ],
+    "autoDocstring.docstringFormat": "google",
+
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "editor.formatOnSave": true,
+
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/*.egg-info": true
+    },
+}
