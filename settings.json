@@ -4,11 +4,8 @@
     "python.linting.enabled": true,
     "pylint.args": ["--rcfile=.pylint/.pylintrc"],
 
-
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-            "--line-length", "120"
-    ],
+    "python.formatting.provider": "none",
+    "python.formatting.blackArgs": ["--line-length=120"],
     "autoDocstring.docstringFormat": "google",
 
     "terminal.integrated.cwd": "${workspaceFolder}",
@@ -23,4 +20,7 @@
         "**/.pytest_cache": true,
         "**/*.egg-info": true
     },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }
