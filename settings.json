@@ -1,16 +1,19 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.pylintArgs": ["--rcfile=.pylint/.pylintrc"],
+    "python.linting.pylintArgs": [
+        "--rcfile=.pylint/.pylintrc"
+    ],
     "python.linting.enabled": true,
-    "pylint.args": ["--rcfile=.pylint/.pylintrc"],
-
+    "pylint.args": [
+        "--rcfile=.pylint/.pylintrc"
+    ],
     "python.formatting.provider": "none",
-    "python.formatting.blackArgs": ["--line-length=120"],
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
     "autoDocstring.docstringFormat": "google",
-
     "terminal.integrated.cwd": "${workspaceFolder}",
     "editor.formatOnSave": true,
-
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
@@ -22,5 +25,10 @@
     },
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
-    }
+    },
+    "grammarly.files.include": [
+        "**/*.md",
+        "**/*.md",
+        "**/*.txt"
+    ]
 }
